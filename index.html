@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inicio</title>
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.0/dist/sweetalert2.all.min.js"></script>
+
+<link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.0/dist/sweetalert2.min.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <header>
+        <div>
+            <p><span>co</span>op</p>
+        </div>
+        <div id="nav">
+            <a href="#" id="inicio">inicio</a>
+            <a href="#" id="registrarse">registrar</a>
+            <a href="#" id="log">iniciar sesion</a>
+        </div>
+    </header>
+    <hr>
+    <main>
+        <div id="inicio">
+            <h1>Bienvenido a the coop </h1>
+            <p>debes iniciar sesion para comprar o vender</p>
+        </div>
+
+        <div id="registrar">
+            <h1>registrarse en coop </h1>
+            <form method="post" >
+                <div id="contenedorimg">    
+                    <img src="socios/user.png" width="100px" >
+                </div>
+                <br>
+                <label for="nombre">Nombre: </label>
+                <br>
+                <input type="text" id="nombre">
+                <br>
+                <label for="apellidos">apellidos: </label>
+                <br>
+                <input type="text" id="apellidos">
+                <br>
+                <br>
+                <label for="mail">correo: </label>
+                <br>
+                <input type="text" id="mail">
+                <br>
+                <label for="password">indica contraseña: </label>
+                <br>
+                <input type="password" id="password">
+                <br>
+                <input type="checkbox" id="mostrar1">
+                <label for="mostrar">mostrar contraseña</label>
+                <br>
+                <label for="repassword">repita la  contraseña: </label>
+                <br>
+                <input type="password" id="repassword">
+                <br>
+                <label for="foto">sube una foto de perfil <span>opcional</span> </label>
+                <br>
+                <input type="file" id="foto">
+                <br>
+                <input type="submit" value="registrar" id="registrar" >               
+            </form>
+        </div>
+        <div id="login">
+            <h1>inicia sesion en coop </h1>
+            <br>
+            <form method="post">
+                <label for="mail">correo: </label>
+                <br>
+                <input type="text" id="mail">
+                <br>
+                <label for="password">indica contraseña: </label>
+                <br>
+                <input type="password" id="password">
+                <br>
+                <input type="checkbox" id="mostrar2">
+                <label for="mostrar">mostrar contraseña</label>
+                <br>
+                <input type="submit" value="iniciar sesion" id="init" >               
+            </form>
+        </div>
+        <div id="errores">
+
+        </div>
+    </main>
+    <hr>
+    <footer>
+        <p>rafael sujar rivera</p>
+    </footer>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,92 @@
+Rafael
+*{
+    box-sizing: border-box;
+    color: white;
+    
+}
+º
+body{
+margin: 0;
+background: linear-gradient(to right, #000046, #1cb5e0);  
+}
+header>div:first-of-type{
+ float: left;  
+ padding-left: 10px;
+}
+header>div:first-of-type> p {
+    font-size: 30px;
+    font-family: 'Trebuchet MS';
+    color: rgb(201, 121, 121);
+   text-transform: uppercase;
+}
+main{
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+#nav{
+    float: right;
+    margin: 30px;
+    
+}
+a{
+   text-decoration: none;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(84, 30, 232);
+    border: 1px solid black;
+}
+a:hover{
+    color: azure;
+}
+
+header::after{
+    clear: both;
+    display: table;
+    content: "";
+}
+div{
+    text-align: left;
+}
+#contenedorimg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+img{   
+    border-radius: 200px;
+}
+input {
+    color: black;
+}
+button {
+    color: black;
+}
+
+main > div{
+    border: 1px solid black;
+border-radius: 30px;
+background-color: black;
+opacity: 0.75;
+text-align: center;
+}
+#errores{
+    background-color: grey;
+    border-radius: 0px;
+    display: none;
+    opacity: 1;
+}
+
+#logout > img{
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
+#logout:hover{
+    content: "cerrar sesion";
+}

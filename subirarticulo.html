@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inicio</title>
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.0/dist/sweetalert2.all.min.js"></script>
+
+<link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.0/dist/sweetalert2.min.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <header>
+        <div>
+            <p><span>co</span>op</p>
+        </div>
+        <div id="nav">
+            <a href="tienda.html" id="tienda">tienda</a>
+            <a href="subirarticulo.html" id="articulo">subir articulo</a>
+            <a href="miperfil.html" id="perfil"> mi perfil</a>
+            <a href="misarticulos.html" id="misarticulos">mis articulos</a>
+            <a href="#" id="logout"></a>
+            
+        </div>
+    </header>
+    <hr>
+   <main>
+    <div>
+        <h1>Nuevo articulo en venta</h1>
+        <form  method="post" id="update" >
+            <h3>categoria</h3>
+            <select id="categorias" style="color: black;">
+                <option value="-1">seleccionar categoria</option>
+            </select>
+            <h3>Vendedor</h3>
+            <p id="vendedor"></p>
+            <div>
+                <h3>Imagen</h3>
+                <input type="file" id="foto">
+                <img src="" id="img"> 
+            </div>
+            <h3>nombre</h3>
+            <input type="text" id="nombreArticulo">
+            <h3>precio</h3>
+            <input type="number"  step='0.01'  id="precio">
+            <h3>Descripcion</h3>
+            <input type="text" id="descripcion">
+            <p id="mostrarError" style="display: none;"></p>
+            <input type="submit" id="upload" value="enviar">
+        </form>
+    </div>
+   </main>
+    <hr>
+    <footer>
+        <p>rafael sujar rivera</p>
+    </footer>
+    <script src="js/update.js"></script>
+</body>
+
+</html> 

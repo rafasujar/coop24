@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tienda</title>
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.0/dist/sweetalert2.all.min.js"></script>
+
+<link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.0/dist/sweetalert2.min.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <header>
+        <div>
+            <p><span>co</span>op</p>
+        </div>
+        <div id="nav">
+            <a href="tienda.html" id="tienda">tienda</a>
+            <a href="subirarticulo.html" id="articulo">subir articulo</a>
+            <a href="miperfil.html" id="perfil"> mi perfil</a>
+            <a href="misarticulos.html" id="misarticulos">mis articulos</a>
+            <a href="#" id="logout"></a>
+            
+        </div>
+    </header>
+    <hr>
+   <main>
+    <h2>Modificar socio</h2>
+    <div>
+        <form  method="post" id="tienda">
+            <div id="registrar">
+                <h1>registrarse en coop </h1>
+                <form method="post" >
+                    <div id="contenedorimg">    
+                        <img src="socios/user.png" width="100px" >
+                    </div>
+                    <br>
+                    <label for="nombre">Nombre: </label>
+                    <br>
+                    <input type="text" id="nombre">
+                    <br>
+                    <label for="apellidos">apellidos: </label>
+                    <br>
+                    <input type="text" id="apellidos">
+                    <br>
+                    <br>
+                    <label for="mail">correo: </label>
+                    <br>
+                    <input type="text" id="mail">
+                    <br>
+                    <label for="password">indica contraseña: </label>
+                    <br>
+                    <input type="password" id="password">
+                    <br>
+                    <input type="checkbox" id="mostrar1">
+                    <label for="mostrar">mostrar contraseña</label>
+                    <br>
+                    <label for="repassword">repita la  contraseña: </label>
+                    <br>
+                    <input type="password" id="repassword">
+                    <br>
+                    <label for="foto">sube una foto de perfil <span>opcional</span> </label>
+                    <br>
+                    <input type="file" id="foto">
+                    <br>
+                    <input type="submit" value="registrar" id="registrar" >               
+                </form>
+            </div>
+        </form>
+    </div>
+    </main>
+    <hr>
+    <footer>
+        <p>rafael sujar rivera</p>
+    </footer>
+    <script src="js/miperfil.js"></script>
+</body>
+
+</html> 
